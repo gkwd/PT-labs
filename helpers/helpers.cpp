@@ -20,3 +20,15 @@ Item create_item(short id) {
 
     return newPrd;
 }
+
+
+Product create_product(short id) {
+    using namespace std;
+    Product newPrd;
+    newPrd.id = id;
+    cout << "Item name: ";
+    cin >> newPrd.name;
+    cout << endl;
+
+    return newPrd;
+}

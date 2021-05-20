@@ -1,9 +1,17 @@
 ﻿#include "headers.h"
 #include "lab001/lab001_ptr.h"
+#include "lab002/lab002.h"
 
-int main()
-{
-    setlocale(LC_ALL, "rus");
+
+/*
+* 
+* Добрый день! Проект сделан с учетом моего опыта в оптимизации сборки
+* На туисе разрешено загружать только .срр файлы поэтому вы видите здесь этот блок окмментариев.
+* Вся работа доступна в репозитории на GitHub.
+* 
+*/
+
+void init_lab001() {
 
     ItemList list;
     int res, k, amount;
@@ -14,15 +22,15 @@ int main()
 
     while (k != 0) {
         while (k != 0 && k != 1 && k != 2 && k != 3 && k != 4 && k != 5 && k != 6 && k != 7) {
-            std::cout 
-            << "To add an item at the end of the list, enter 1;\n"
-            << "to add an item to the top of the list, enter 2;\n"
-            << "to delete an item, enter 3; \n"
-            << "to add after an item, enter 4;\n"
-            << "to add befor an item, enter 5;\n"
-            << "to find an item, enter 6;\n"
-            << "to print a list, enter 7;\n"
-            << "to exit, enter 0: ";                                        
+            std::cout
+                << "To add an item at the end of the list, enter 1;\n"
+                << "to add an item to the top of the list, enter 2;\n"
+                << "to delete an item, enter 3; \n"
+                << "to add after an item, enter 4;\n"
+                << "to add befor an item, enter 5;\n"
+                << "to find an item, enter 6;\n"
+                << "to print a list, enter 7;\n"
+                << "to exit, enter 0: ";
             std::cin >> k;
             std::cout << "\n\n";
 
@@ -99,6 +107,81 @@ int main()
             std::cout << "\n\n";
         }
     }
+}
 
+void init_lab002() {
+    Point2d v1_xy1{ 2, 3 };
+    Point2d v1_xy2{ 5, 7 };
+    Point2d v2_xy1{ 8, 9 };
+    Point2d v2_xy2{ 1, 1 };
+
+    Vector v1{ v1_xy1, v1_xy2 };
+    Vector v2{ v2_xy1, v2_xy2 };
+
+    short task_id = -1;
+    std::cout << "Vector #1 ============================ " << std::endl;
+    v1.info();
+    std::cout << "Vector #2 ============================ " << std::endl;
+    v2.info();
+
+    std::cout << "Sum of vectors: x = " << (v1 + v2).x << " y = " << (v1 + v2).y << std::endl;
+    std::cout << "Multiplication of vectors: " << v1 * v2 << std::endl;
+    std::cout << "Unary minus of vector 1: " << std::endl;
+    (-v1).info();
+
+    Vector copied{ v2 };
+
+    std::cout << "Copied vector info ===================: " << std::endl;
+    copied.info();
+}
+
+int main()
+{
+    setlocale(LC_ALL, "rus");
+
+    short lab_id = -1;
+
+    while (lab_id != 0)
+    {
+        
+        while (!(lab_id == 1 || lab_id == 2 || lab_id == 3))
+        {
+            std::cout << "Choose lab: ";
+            
+            std::cin >> lab_id;
+            if (!(lab_id == 1 || lab_id == 2 || lab_id == 3))
+            {
+                std::cout << "Wrong code" << std::endl;
+                std::cin.clear();
+                std::cin.ignore(1000, '\n');
+                system("pause");
+            }
+            else {
+                switch (lab_id)
+                {
+                case 0: {
+                    break;
+                }
+                case 1: {
+                    init_lab001();
+                    break;
+                }
+                case 2: {
+                    init_lab002();
+                    break;
+                }
+                case 3: {
+                    std::cout << "lab 3 in progress" << std::endl;
+                    break;
+                }
+                default:
+                    std::cout << "Something went wrong" << std::endl;
+                    break;
+                }
+            }
+            
+        }
+    }
+    
     return 0;
 }

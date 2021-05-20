@@ -12,7 +12,26 @@ struct Item
 	int price;
 };
 
+struct Product
+{
+	int id;
+	std::string name;
+	Product* next;
+};
+
+struct Point2d {
+	int x;
+	int y;
+};
+
+struct Point3d {
+	int x;
+	int y;
+	int z;
+};
+
 
 Item create_item(short id);
+Product create_product(short id);
 
 #endif HELPERS

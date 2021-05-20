@@ -13,27 +13,48 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Исходные файлы\lab001">
+      <UniqueIdentifier>{edfbc697-4ae1-4d88-b599-6c34c0fb8c87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\lab002">
+      <UniqueIdentifier>{91a2000e-7287-480f-bbd0-cbad1f78782d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\lab003">
+      <UniqueIdentifier>{a8153c57-794b-40fa-b381-cdf8941b74a1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="lab001\lab001_ptr.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="helpers\helpers.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="lab001\lab001_linked.cpp">
+      <Filter>Исходные файлы\lab001</Filter>
+    </ClCompile>
+    <ClCompile Include="lab001\lab001_ptr.cpp">
+      <Filter>Исходные файлы\lab001</Filter>
+    </ClCompile>
+    <ClCompile Include="lab002\lab002.cpp">
+      <Filter>Исходные файлы\lab002</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="lab001\lab001_ptr.h">
-      <Filter>Исходные файлы</Filter>
-    </ClInclude>
     <ClInclude Include="helpers\helpers.h">
       <Filter>Исходные файлы</Filter>
     </ClInclude>
     <ClInclude Include="headers.h">
       <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="lab001\lab001_ptr.h">
+      <Filter>Исходные файлы\lab001</Filter>
+    </ClInclude>
+    <ClInclude Include="lab001\lab001_linked.h">
+      <Filter>Исходные файлы\lab001</Filter>
+    </ClInclude>
+    <ClInclude Include="lab002\lab002.h">
+      <Filter>Исходные файлы\lab002</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
