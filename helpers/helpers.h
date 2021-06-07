@@ -34,4 +34,19 @@ struct Point3d {
 Item create_item(short id);
 Product create_product(short id);
 
+
+class Exeption
+{
+public:
+	Exeption(std::string msg, short code);
+	Exeption(std::string msg);
+	Exeption();
+
+	~Exeption();
+
+	std::string error_message;
+	short error_code;
+	bool is_code_provided;
+};
+
 #endif HELPERS

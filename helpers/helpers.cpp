@@ -32,3 +32,27 @@ Product create_product(short id) {
 
     return newPrd;
 }
+
+
+class Exeption
+{
+    public:
+        Exeption(std::string msg, short code) {
+            error_message = msg;
+            is_code_provided = true;
+            error_code = code;
+        }
+        Exeption(std::string msg) {
+            error_message = msg;
+            is_code_provided = false;
+        }
+        Exeption() {}
+
+        ~Exeption() {
+
+        }
+
+        std::string error_message = "Unknown exeption";
+        short error_code = 1;
+        bool is_code_provided = false;
+};
