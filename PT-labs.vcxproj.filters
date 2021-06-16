@@ -20,7 +20,7 @@
       <UniqueIdentifier>{91a2000e-7287-480f-bbd0-cbad1f78782d}</UniqueIdentifier>
     </Filter>
     <Filter Include="Исходные файлы\lab003">
-      <UniqueIdentifier>{a8153c57-794b-40fa-b381-cdf8941b74a1}</UniqueIdentifier>
+      <UniqueIdentifier>{8f6f080f-4912-4dba-a024-8c19706589e6}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -39,22 +39,28 @@
     <ClCompile Include="lab002\lab002.cpp">
       <Filter>Исходные файлы\lab002</Filter>
     </ClCompile>
+    <ClCompile Include="lab003\lab003.cpp">
+      <Filter>Исходные файлы\lab003</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="helpers\helpers.h">
-      <Filter>Исходные файлы</Filter>
+    <ClInclude Include="lab003\lab003.h">
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="headers.h">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="lab001\lab001_ptr.h">
-      <Filter>Исходные файлы\lab001</Filter>
-    </ClInclude>
-    <ClInclude Include="lab001\lab001_linked.h">
-      <Filter>Исходные файлы\lab001</Filter>
+    <ClInclude Include="helpers\helpers.h">
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="lab002\lab002.h">
-      <Filter>Исходные файлы\lab002</Filter>
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="lab001\lab001_linked.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="lab001\lab001_ptr.h">
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

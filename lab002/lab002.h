@@ -1,5 +1,6 @@
 #ifndef LAB002_VECTOR
 #define LAB002_VECTOR
+#include "../helpers/helpers.h"
 
 class Vector
 {

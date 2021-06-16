@@ -35,18 +35,18 @@ Item create_item(short id);
 Product create_product(short id);
 
 
-class Exeption
+class CustomExeption
 {
 public:
-	Exeption(std::string msg, short code);
-	Exeption(std::string msg);
-	Exeption();
+	CustomExeption(std::string msg, short code);
+	CustomExeption(std::string msg);
+	CustomExeption();
 
-	~Exeption();
+	~CustomExeption();
 
-	std::string error_message;
-	short error_code;
-	bool is_code_provided;
+	std::string error_message = "Unknown exeption";
+	short error_code = 1;
+	bool is_code_provided = false;
 };
 
 #endif HELPERS

@@ -1,5 +1,6 @@
 #include "../headers.h"
 #include "lab001_linked.h"
+#include "../helpers/helpers.h"
 // TODO: Finish this
 void Linked::del_at(short id)
 {

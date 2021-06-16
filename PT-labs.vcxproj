@@ -143,6 +143,7 @@
     <ClCompile Include="lab001\lab001_linked.cpp" />
     <ClCompile Include="lab001\lab001_ptr.cpp" />
     <ClCompile Include="lab002\lab002.cpp" />
+    <ClCompile Include="lab003\lab003.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -151,6 +152,7 @@
     <ClInclude Include="lab001\lab001_linked.h" />
     <ClInclude Include="lab001\lab001_ptr.h" />
     <ClInclude Include="lab002\lab002.h" />
+    <ClInclude Include="lab003\lab003.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

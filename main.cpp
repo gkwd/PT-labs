@@ -1,6 +1,7 @@
 ﻿#include "headers.h"
 #include "lab001/lab001_ptr.h"
 #include "lab002/lab002.h"
+#include "lab003/lab003.h"
 
 
 /*
@@ -135,6 +136,67 @@ void init_lab002() {
     copied.info();
 }
 
+
+
+void init_lab003() {
+    const short DEFAULT_ROW_SIZE = 3;
+    const short DEFAULT_COLUMN_SIZE = 3;
+    using namespace ui_labs::lab003;
+
+    Matrix first(DEFAULT_COLUMN_SIZE, DEFAULT_ROW_SIZE);
+    for (size_t i = 0; i < DEFAULT_COLUMN_SIZE; i++)
+    {
+        for (size_t j = 0; j < DEFAULT_ROW_SIZE; j++)
+        {
+            first.matrix[i][j] = 3;
+        }
+    }
+    first.info();
+
+    Matrix second(DEFAULT_COLUMN_SIZE, DEFAULT_ROW_SIZE);
+    for (size_t i = 0; i < DEFAULT_COLUMN_SIZE; i++)
+    {
+        for (size_t j = 0; j < DEFAULT_ROW_SIZE; j++)
+        {
+            second.matrix[i][j] = 3;
+        }
+    }
+    second.info();
+
+    Matrix third(DEFAULT_COLUMN_SIZE, DEFAULT_ROW_SIZE);
+    for (size_t i = 0; i < DEFAULT_COLUMN_SIZE; i++)
+    {
+        for (size_t j = 0; j < DEFAULT_ROW_SIZE; j++)
+        {
+            third.matrix[i][j] = 3;
+        }
+    }
+    third.info();
+
+    std::cout << "Operator + (Addition) Matrix + Matrix" << std::endl;
+    Matrix plus = first + second;
+    plus.info();
+
+    std::cout << "Operator + (Multiplication) Matrix * Matrix" << std::endl;
+    Matrix multiplication = first * second;
+    multiplication.info();
+
+
+    std::cout << "Operator * (Multiplication) Matrix * Number" << std::endl;
+    Matrix multiplicationNumber = first * 5;
+    multiplicationNumber.info();
+
+
+    std::cout << "Copied matrix (multiplicationNumber)" << std::endl;
+    Matrix copied(multiplicationNumber);
+    copied.info();
+
+    std::cout << "Matrix assignment = (Multiplication)" << std::endl;
+    Matrix assigment = multiplication;
+    assigment.info();
+}
+
+
 int main()
 {
     setlocale(LC_ALL, "rus");
@@ -171,7 +233,7 @@ int main()
                     break;
                 }
                 case 3: {
-                    std::cout << "lab 3 in progress" << std::endl;
+                    init_lab003();
                     break;
                 }
                 default:
